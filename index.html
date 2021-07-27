@@ -168,8 +168,67 @@
                             <div class='buttons-container'>
 
                                 <a class='buttons' href='https://kayden.cf/kaydendash.exe'>Download</a>
-           <!--                 <a class='buttons' href=''>Download</a> -->
+                                <!-- Modal -->
+                                <!-- <a class='buttons' href=''>Product Info</a> -->
 
+                                <button>Click to open modal</button>
+
+<script defer src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #333;
+}
+button {
+  font-size: 1.25rem;
+  border: none;
+  background: #fff;
+  color: #333;
+  padding: 0.5em 1.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+button:active {
+  transform: translatey(1px);
+}
+
+</style>
+
+<script>
+const button = document.querySelector("button");
+
+/** 
+Customize the options to change the content of modal or get exact code from github repositary
+**/
+
+button.addEventListener("click", () => {
+  const options = {
+    title: "Modal",
+    icon: "success",
+    text: "You successfully saw our modal",
+    confirmButtonText: "OK, Let's see."
+  };
+  Swal.fire(options);
+});
+
+</script>
+
+
+<!-- End modal -->
                             </div>
 
                         </div>
@@ -198,7 +257,7 @@
                             <div class='buttons-container'>
 
                                 <a class='buttons' href=''>Download</a>
-                                <a class='buttons' href=''>Info</a>
+                                <a class='buttons' href='https://www.adobe.com/sg/products/premiere.html' target="_blank">Product Info</a>
 
                             </div>
 
