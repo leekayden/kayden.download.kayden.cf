@@ -193,7 +193,7 @@ body {
   flex-direction: column;
   background: #333;
 }
-button {
+/* button {
   font-size: 1.25rem;
   border: none;
   background: #fff;
@@ -204,7 +204,7 @@ button {
 }
 button:active {
   transform: translatey(1px);
-}
+} */
 
 </style>
 
@@ -220,7 +220,7 @@ button.addEventListener("click", () => {
     title: "Modal",
     icon: "success",
     text: "You successfully saw our modal",
-    confirmButtonText: "OK, Let's see."
+    confirmButtonText: "Close"
   };
   Swal.fire(options);
 });
